@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <script src="./js/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Agenda Personal </h1>
+        <button type="button" id="log_out">Cerrar Sesion</button>
+    </header>
+    <main>
+        <br>
+        <h2 id="bienvenida"></h2>
+        <div id="cont-agendas">
+            <button type="button" id="ver_add_agenda">Agregar Agenda</button>
+            <button type="button" id="ver_agendas">Ver Agendas</button>
+                <form id="add_agenda" style="display: none;">
+                    <label for="tittle">Titulo
+                        <input type="text" name="tittle" id="tittle">
+                    </label>
+                    <label for="description">Descripcion
+                        <input type="text" name="description" id="description">
+                    </label>
+                    <label for="ubication">Ubicacion
+                        <input type="text" name="ubication" id="ubication">
+                    </label>
+                    <label for="inicio">Hora inicio
+                        <input type="datetime-local" name="inicio" id="inicio">
+                    </label>
+                    <label for="fin">Hora Fin
+                        <input type="datetime-local" name="fin" id="fin">
+                    </label>
+                    <button type="button" id="form_add_agenda">Agregar</button>
+                </form>
+            <form id="agendas_existente" style="display: none;">
+                <h1 id="cuantas-agendas"></h1>
+            </form>
+        </div>
+    </main>
+</html>
