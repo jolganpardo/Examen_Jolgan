@@ -31,3 +31,15 @@ div {
     border: 2px solid lightgray;
     animation: 1s;
 }
+
+form {
+    text-align: left;
+}
+
+#cont-agendas {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
